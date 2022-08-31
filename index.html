@@ -187,6 +187,26 @@
         Intro
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="labeling/">
+        Labeling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="imagery/">
+        Imagery
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="modeling/">
+        Modeling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="classification/">
+        Classification
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -280,15 +300,15 @@
 </p>
 <figcaption>GEOCS - Gate of Earth Observation for Calculate Statistics</figcaption>
 </figure>
-<p>Documentation: <a href="https://fitriandriastuti.github.io/geocsdoc">https://fitriandriastuti.github.io/geocsdoc</a></p>
-<p>Source Code: <a href="https://github.com/fitriandriastuti/geocs">https://github.com/fitriandriastuti/geocs</a></p>
+<p>Documentation: <a href="https://fitriandriastuti.github.io/geocsdoc" target="_blank">https://fitriandriastuti.github.io/geocsdoc</a></p>
+<p>Source Code: <a href="https://github.com/fitriandriastuti/geocs" target="_blank">https://github.com/fitriandriastuti/geocs</a></p>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <p>GEOCS is a set of Python projects aimed at labeling, organizing, modeling, classifying, and analyzing satellite imagery data for statistical data estimation.</p>
 <h2 id="part-of-project">Part of Project<a class="headerlink" href="#part-of-project" title="Permanent link">¶</a></h2>
 <ul>
 <li><code>backend</code> - The GEOCS backend is built on top of the <a href="https://fastapi.tiangolo.com" target="_blank">FastAPI</a> framework.</li>
-<li><code>frontend</code> - The GEOCS frontend is built on top of the <a href="https://flask.palletsprojects.com/en/2.2.x">Flask</a> framework.</li>
-<li><code>database server</code> - GEOCS database using <a href="https://www.mongodb.com">MongoDB</a>.</li>
+<li><code>frontend</code> - The GEOCS frontend is built on top of the <a href="https://flask.palletsprojects.com/en/2.2.x" target="_blank">Flask</a> framework.</li>
+<li><code>database server</code> - GEOCS database using <a href="https://www.mongodb.com" target="_blank">MongoDB</a>.</li>
 <li><code>tile server</code> - GEOCS tile server using <a href="https://developmentseed.org/titiler" target="_blank">https://developmentseed.org/titiler/</a>.</li>
 </ul>
 <h2 id="live-project">Live Project<a class="headerlink" href="#live-project" title="Permanent link">¶</a></h2>
@@ -371,14 +391,26 @@ conda install --file requirements.txt
 jupyter notebook
 </code></pre></div>
 <h4 id="project-structure-module-classification-geocs">Project Structure Module Classification GEOCS:<a class="headerlink" href="#project-structure-module-classification-geocs" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>src/geocstitiler/           - Tile Server GEOCS with Titiler modules.
- ├── static/                - CSS and JS page
- ├── template/              - HTML page
- └── main.py                - Main file of project.
+<div class="highlight"><pre><span></span><code>geocsclassification/                                                  - GEOCS Classification modules.
+ ├── data/                                                            - <span class="nb">set</span> of tabulation of data testing classification
+ ├── data_citra/                                                      - <span class="nb">set</span> of data raster input and output classification
+ └── <span class="m">01</span>. Random Forest Building Capital Stock.ipynb                   - Classification with RF
+ └── <span class="m">02</span>. Perbandingan Sistem Usulan vs PIM Random Forest.ipynb        - Comparisoon of Classification with RF and PIM
+ └── <span class="m">03</span>. Perbandingan Sistem Usulan vs PIM Decision Tree.ipynb        - Comparisoon of Classification with DT and PIM
+ └── <span class="m">04</span>. Perbandingan Sistem Usulan vs PIM SVM.ipynb                  - Comparisoon of Classification with SVM and PIM
+ └── <span class="m">05</span>. Perbandingan Sistem Usulan vs PIM Logistic Regression.ipynb  - Comparisoon of Classification with LR and PIM
+ └── <span class="m">06</span>. Perbandingan Sistem Usulan vs PIM Naive Bayes.ipynb          - Comparisoon of Classification with NB and PIM
+ └── <span class="m">07</span>. Klasifikasi Random Forest <span class="m">2019</span>.ipynb                         - Classification with RF <span class="m">2019</span> and Calculate Building Capital Stock
+ └── <span class="m">08</span>. Klasifikasi Random Forest <span class="m">2018</span>.ipynb                         - Classification with RF <span class="m">2018</span> and Calculate Building Capital Stock
+ └── <span class="m">09</span>. Klasifikasi Random Forest <span class="m">2017</span>.ipynb                         - Classification with RF <span class="m">2017</span> and Calculate Building Capital Stock
+ └── <span class="m">10</span>. Klasifikasi Random Forest <span class="m">2016</span>.ipynb                         - Classification with RF <span class="m">2016</span> and Calculate Building Capital Stock
+ └── <span class="m">11</span>. Klasifikasi Random Forest <span class="m">2015</span>.ipynb                         - Classification with RF <span class="m">2015</span> and Calculate Building Capital Stock
+ └── <span class="m">12</span>. Klasifikasi Random Forest <span class="m">2014</span>.ipynb                         - Classification with RF <span class="m">2014</span> and Calculate Building Capital Stock
+ └── <span class="m">13</span>. Klasifikasi Random Forest <span class="m">2013</span>.ipynb                         - Classification with RF <span class="m">2013</span> and Calculate Building Capital Stock
 </code></pre></div>
 <h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">¶</a></h2>
-<p>Created by <a href="fitrengineer.com">Fitri Andri Astuti</a></p>
-<p>Mentored by <a href="https://id.linkedin.com/in/baskara">I Gusti Bagus Baskara Nugraha, S.T., M.T., Ph.D.</a></p>
+<p>Created by <a href="http://fitrengineer.com" target="_blank">Fitri Andri Astuti</a></p>
+<p>Mentored by <a href="https://id.linkedin.com/in/baskara" target="_blank">I Gusti Bagus Baskara Nugraha, S.T., M.T., Ph.D.</a></p>
 </article>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 </div>
